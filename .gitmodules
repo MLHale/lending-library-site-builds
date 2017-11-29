@@ -2,3 +2,7 @@
 	path = backend
 	url = https://github.com/MLHale/wistem-app-backend
 	branch = master
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/MLHale/wistem-app-frontend
+	branch = master
