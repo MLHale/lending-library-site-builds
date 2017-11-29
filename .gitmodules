@@ -1,0 +1,4 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/MLHale/wistem-app-backend
+	branch = master
