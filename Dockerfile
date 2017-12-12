@@ -25,6 +25,7 @@ WORKDIR ${APP_ROOT}
 #Python packages
 RUN pip install Django==1.11
 RUN pip install djangorestframework
+RUN pip install django-templated-email
 RUN pip install markdown
 RUN pip install django-filter
 RUN pip install psycopg2
