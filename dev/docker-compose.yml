@@ -7,12 +7,12 @@ services:
       - postgres-config:/etc/postgresql
       - postgres-data:/var/lib/postgresql/data
       - postgres-logs:/var/log/postgresql
-      - ./database-backup:/database-backup
+      - ../database-backup:/database-backup
   django:
     build: .
     command: python /var/www/backend/manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./backend:/var/www/backend
+      - ../backend:/var/www/backend
     ports:
      - "80:8000"
     depends_on:
