@@ -28,11 +28,12 @@ RUN pip install djangorestframework
 RUN pip install django-templated-email
 RUN pip install markdown
 RUN pip install django-filter
-RUN pip install psycopg2
+RUN pip install psycopg2-binary
 RUN pip install requests
 RUN pip install bleach
 RUN pip install gunicorn==19.6.0
 RUN pip install django-templated-email
+RUN pip install djangorestframework-jsonapi
 
 USER ${APP_USER}
 ADD . ${APP_ROOT}
