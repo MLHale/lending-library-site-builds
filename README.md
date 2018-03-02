@@ -120,10 +120,7 @@ sudo docker run \
   google/cadvisor:latest
 ```
 
-Now visit ```localhost:8080``` or ```<ip>:8080``` to view the current performance. You should see monitoring tools that resemble:
-
-![cadvisor](docs/img/cadvisor.png)
-
+Now visit ```localhost:8080``` or ```<ip>:8080``` to view the current performance.
 
 # License
 The WiSTEM Award Tracker App is an search-oriented award management app for the UNO Women in stem program.
