@@ -27,7 +27,7 @@ RUN pip install Django==1.11
 RUN pip install djangorestframework
 RUN pip install django-templated-email
 RUN pip install markdown
-RUN pip install django-filter
+RUN pip install django-filter==1.1
 RUN pip install psycopg2-binary
 RUN pip install requests
 RUN pip install bleach
