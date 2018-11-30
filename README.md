@@ -10,7 +10,7 @@ You need to build the docker image from the provided DockerFile using Docker Com
 
 ### Acquiring the files
 ```bash
-git clone --recursive https://github.com/MLHale/lending-library-builds.git
+git clone --recursive https://github.com/MLHale/lending-library-site-builds.git
 cd lending-library-builds
 git submodule sync
 git submodule update --init --recursive --remote
