@@ -1,8 +1,18 @@
+# @Author: Matthew Hale <mlhale>
+# @Date:   2018-11-29T18:39:50-06:00
+# @Email:  mlhale@unomaha.edu
+# @Filename: .gitmodules
+# @Last modified by:   mlhale
+# @Last modified time: 2018-11-29T19:00:07-06:00
+# @Copyright: Copyright (C) 2018 Matthew L. Hale
+
+
+
 [submodule "backend"]
-	path = backend
-	url = https://github.com/MLHale/wistem-app-backend
+	path = lending-library-backend
+	url = https://github.com/MLHale/lending-library-backend
 	branch = master
 [submodule "frontend"]
-	path = frontend
-	url = https://github.com/MLHale/wistem-app-frontend
+	path = lending-library-frontend
+	url = https://github.com/MLHale/lending-library-frontend
 	branch = master

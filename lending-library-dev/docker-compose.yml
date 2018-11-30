@@ -2,8 +2,8 @@
 # @Date:   2018-02-28T00:25:23-06:00
 # @Email:  mlhale@unomaha.edu
 # @Filename: docker-compose.yml
-# @Last modified by:   matthale
-# @Last modified time: 2018-02-28T00:44:27-06:00
+# @Last modified by:   mlhale
+# @Last modified time: 2018-11-29T19:01:00-06:00
 # @Copyright: Copyright (C) 2018 Matthew L. Hale
 
 
@@ -22,7 +22,7 @@ services:
     build: ../.
     command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py migrate && python /var/www/backend/manage.py runserver 0.0.0.0:8000"
     volumes:
-      - ../backend:/var/www/backend
+      - ../lending-library-backend:/var/www/backend
     ports:
      - "80:8000"
     depends_on:

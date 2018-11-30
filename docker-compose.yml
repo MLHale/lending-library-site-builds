@@ -1,3 +1,13 @@
+# @Author: Matthew Hale <mlhale>
+# @Date:   2018-11-29T18:39:50-06:00
+# @Email:  mlhale@unomaha.edu
+# @Filename: docker-compose.yml
+# @Last modified by:   mlhale
+# @Last modified time: 2018-11-29T18:59:56-06:00
+# @Copyright: Copyright (C) 2018 Matthew L. Hale
+
+
+
 version: "2"
 services:
   nginx:
@@ -6,8 +16,9 @@ services:
     ports:
       - "80:8000"
     volumes:
-      - ./backend:/var/www/backend
-      - ./config/nginx:/etc/nginx/conf.d
+      - ./lending-library-backend:/var/www/backend
+      - ./prod/nginx:/etc/nginx/conf.d
+      - ./prod/logs:/var/logs/nginx
     depends_on:
       - django
   django:
@@ -15,7 +26,7 @@ services:
     restart: always
     command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py migrate && gunicorn django_backend.wsgi -w 4 -b  0.0.0.0:8000"
     volumes:
-      - ./backend:/var/www/backend
+      - ./lending-library-backend:/var/www/backend
     expose:
      - "8000"
     depends_on:
