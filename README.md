@@ -1,5 +1,5 @@
-# WiSTEM Award Tracker App Build Repository.
-The WiSTEM Award Tracker App is an search-oriented award management app for the UNO Women in stem program at the University of Nebraska Omaha.
+# Lending Library App Build Repository.
+Summary to go here
 
 ## Requirements
 This app is fully containerized. There is only 1 requirement:
@@ -10,8 +10,8 @@ You need to build the docker image from the provided DockerFile using Docker Com
 
 ### Acquiring the files
 ```bash
-git clone --recursive https://github.com/MLHale/wistem-app-builds.git
-cd wistem-app-builds
+git clone --recursive https://github.com/MLHale/lending-library-site-builds.git
+cd lending-library-builds
 git submodule sync
 git submodule update --init --recursive --remote
 ```
@@ -123,7 +123,7 @@ sudo docker run \
 Now visit ```localhost:8080``` or ```<ip>:8080``` to view the current performance.
 
 # License
-The WiSTEM Award Tracker App is an search-oriented award management app for the UNO Women in stem program.
+The Lending Library App is an search-oriented award management app for maintaining the uno lending library.
 Copyright (C) 2017  Matt Hale and CYBR8470 Class.
 
 This program is free software: you can redistribute it and/or modify
