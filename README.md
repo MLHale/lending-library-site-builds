@@ -75,7 +75,7 @@ npm install
 Now to build the code and push it to the backend server:
 from `frontend`, run:
 ```bash
-ember build -w -o ../backend/static/ember
+ember build -w -o ../lending-library-backend/static/ember
 ```
 > thats it, your code will auto-rebuild as you make changes
 
