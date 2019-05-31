@@ -34,6 +34,7 @@ RUN pip install bleach
 RUN pip install gunicorn==19.6.0
 RUN pip install django-templated-email
 RUN pip install djangorestframework-jsonapi
+RUN pip install Pillow
 
 # USER ${APP_USER}
 # ADD . ${APP_ROOT}
